@@ -21,10 +21,10 @@ function askForName() {
 }
 
 function paintGreeting(text) {
-  console.log(text);
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Hello, ${text}`;
+  greeting.innerText = `Hello, ${text}.
+  What's your to do things?`;
 }
 
 function loadName() {

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./reset.css" />
-    <title>Momentum - ToDo App</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Momentum - To Do App</title>
   </head>
   <body>
     <div class="container">
@@ -17,8 +17,26 @@
         <input class="input-name" type="text" placeholder="What's your name?" />
       </form>
       <h4 class="js-greetings greetings"></h4>
-      <script src="clock.js"></script>
-      <script src="greeting.js"></script>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write To do" />
+      </form>
+      <div class="todo-container">
+        <div class="todo-container-list">
+          <h4>Pending</h4>
+          <ul class="js-pending"></ul>
+        </div>
+        <div class="todo-container-list">
+          <h4>Finished</h4>
+          <ul class="js-finished"></ul>
+        </div>
+      </div>
+      <span class="js-weather"></span>
     </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
